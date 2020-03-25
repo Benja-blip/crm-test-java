@@ -62,11 +62,11 @@ public class FirstTestCase {
 			System.out.println("Problem with welcome page test");
 		}
 		
-		companies();
+		viewCompanies();
 		
 	}
 	
-	public static void companies() {
+	public static void viewCompanies() {
 		
 		driver.findElement(By.id("addCompany")).click();
 		String title=driver.findElement(By.tagName("h1")).getText();
@@ -79,11 +79,11 @@ public class FirstTestCase {
 			System.out.println("Unable to connect to companies page.");
 		}
 		
-		createCom();
+		createCompany();
 		
 	}
 	
-	public static void createCom() {
+	public static void createCompany() {
 		
 		driver.findElement(By.linkText("Add Company")).click();
 		String title=driver.findElement(By.tagName("h1")).getText();
